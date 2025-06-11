@@ -6,15 +6,15 @@ A modern, responsive Persian-language e-commerce application built with **React*
 
 ## ✨ Features
 
-- 🗂️ Product categorization with filter by category
-- 🔍 Search bar (visible only on the Products page)
-- 🛒 Shopping cart with add, remove, quantity change
-- 💖 Add/remove favorites
-- 💾 Data persistence via **localStorage**
+- 🗂️ Product categorization with filtering
+- 🔍 Search bar (only visible on the Products page)
+- 🛒 Shopping cart with add, remove, and quantity updates
+- 💖 Add/remove favorite products
+- 💾 Persistent cart & favorites with **localStorage**
 - 🏷️ Discount code calculation
-- 🌐 SPA routing with **React Router**
-- ⚙️ Global state management via **Context API + useReducer**
-- 📱 Responsive design with RTL support (for Persian layout)
+- 🌐 SPA routing via **React Router**
+- ⚙️ Global state management with **Context API + useReducer**
+- 📱 Responsive design with full RTL support for Persian users
 
 ---
 
@@ -28,6 +28,7 @@ A modern, responsive Persian-language e-commerce application built with **React*
 - [React Hot Toast](https://react-hot-toast.com/)
 - [Vite](https://vitejs.dev/)
 - [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- [JSON Server](https://github.com/typicode/json-server)
 
 ---
 
@@ -51,14 +52,31 @@ cd react-onlineSupermarket
 
 # Install dependencies
 npm install
-
-#Set Up the API
+# Install JSON Server globally (if not already installed)
 npm install -g json-server
-Ensure the ProductData.json file is in the project root (or specify its path, e.g., src/data/ProductData.json if in a subfolder).
 
-#Start the JSON server in a separate terminal:
+# Start the JSON Server in a separate terminal
 json-server --watch src/data/ProductData.json --port 8000
-The API will be available at http://localhost:8000. Make sure the port (8000) does not conflict with the development server.
+⚠️ Make sure the file path matches your setup. The API will be available at:
+http://localhost:8000/products
 
 # Start the development server
 npm run dev
+
+
+📁 Project Structure
+
+src/
+├── components/      # Shared UI components
+├── context/         # Cart & Favorite context providers
+├── data/            # Fake product data (JSON)
+├── pages/           # Page components (Home, Products, Favorites, etc.)
+├── App.jsx          # Main app and routes
+└── main.jsx         # Entry point
+
+
+
+🙋‍♀️ Author
+Developed by Mahshid soleiman as a React practice project.
+Feel free to fork, use, or improve it!
+

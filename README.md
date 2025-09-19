@@ -41,7 +41,7 @@ A modern, responsive Persian-language e-commerce application built with **React*
 ![Products Page](https://github.com/user-attachments/assets/826b0c8d-f981-4eb8-8725-9e3206e5c46e)
 
 ###💗favoritePage
-![[Favorites Page](https://github.com/user-attachments/assets/e817beb5-a7f7-45f0-ac80-985e6897190d)
+![Favorites Page](https://github.com/user-attachments/assets/e817beb5-a7f7-45f0-ac80-985e6897190d)
 
 ###🛒cartPage
 ![cart Page](https://github.com/user-attachments/assets/f59b715c-5594-4dbf-b2ec-5fe066913c5d)
